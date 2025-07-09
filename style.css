@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    display: flex;
+    background-color: #EBF1FF;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.h3 {
+    font-size: 24px;
+    margin-bottom: 25px
+}
+
+.result-card {
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex: 1 0 50%;
+    max-width: 712px;
+    box-shadow: 4px 10px 19px #ced9f3;
+}
+
+.r-score {
+    background: linear-gradient(#7857FF, #2E2BE9);
+    border-radius: 30px;
+    color: #C8C7FF;
+    padding: 40px 30px;
+    width: 50%;
+    text-align: center;
+
+}
+
+.circle {
+    border-radius: 50%;
+    background: linear-gradient(#4E21CA, rgba(36, 33, 202, 0));
+    height: 187px;
+    width: 187px;
+    font-size: 70px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto 50px auto;
+    color: #fff;
+}
+
+.circle .out-of {
+    font-size: 16px;
+    font-weight: 600;
+    color: #C8C7FF;
+}
+
+.r-details {
+    padding: 40px 25px 40px 40px;
+    width: 50%;
+}
+
+.stat {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(255, 85, 85, 0.05);
+    color: #FF5555;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat .name {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.stat.yellow {
+    background-color: rgba(255, 178, 30, 0.05);
+    color: #FFB21E;
+}
+
+.stat.green {
+    background-color: rgba(0, 187, 143, 0.05);
+    color: #00BB8F;
+}
+
+.stat.blue {
+    background-color: rgba(17, 37, 214, 0.05);
+    color: #1125D6;
+}
+
+.stat .value {
+    color: rgba(48, 59, 90, 0.5);
+    align-self: flex-end;
+}
+
+.stat .value strong {
+    color: #303B5A;
+}
+
+.message {
+    padding: 0 20px 10px 20px;
+}
+
+.highlight {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+button {
+    background-color: #303B5A;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 19px;
+    margin-top: 25px
+}
+button:hover {
+    background: linear-gradient(#7857FF, #2E2BE9);
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #fff;
+    }
+    .result-card {
+        flex-direction: column;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .r-score {
+        border-radius: 0 0 30px 30px;
+    }
+    .r-score, .r-details {
+        width: 100%;
+    }
+}
